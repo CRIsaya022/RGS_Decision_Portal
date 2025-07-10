@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rafiki Global Scholars - Decision Portal</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <img
+            src="assets/rafiki-logo.png"
+            alt="Rafiki Global Scholars Logo"
+            class="logo-img"
+          />
+          <div class="logo-text">
+            <h1>RAFIKI GLOBAL SCHOLARS</h1>
+            <p class="tagline">DECISION PORTAL</p>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#footer">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="welcome-section">
+          <h2>Rafiki Global Scholars Decision Portal</h2>
+          <p>Enter your applicant information below to access your portal.</p>
+
+          <div class="login-container">
+            <form id="login-form">
+              <div class="form-group">
+                <label for="applicant-id">Applicant ID</label>
+                <input
+                  type="text"
+                  id="applicant-id"
+                  name="applicant-id"
+                  required
+                  pattern="\d{6}"
+                  title="6-digit applicant ID"
+                />
+              </div>
+              <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required />
+              </div>
+              <button type="submit" class="btn-primary">
+                View My Decision <i class="fas fa-arrow-right"></i>
+              </button>
+            </form>
+          </div>
+        </section>
+
+        <section class="info-section">
+          <div class="info-card">
+            <div class="icon-circle">
+              <i class="fas fa-calendar-alt"></i>
+            </div>
+            <h3>Important Dates</h3>
+            <p>Decision Release: July 10, 2025</p>
+            <p>Response Deadline: July 12, 2025 (if applicable)</p>
+          </div>
+          <div class="info-card">
+            <div class="icon-circle">
+              <i class="fas fa-question-circle"></i>
+            </div>
+            <h3>Need Help?</h3>
+            <p>Contact us:</p>
+            <p>info@rafikiglobalscholars.org</p>
+          </div>
+          <div class="info-card">
+            <div class="icon-circle">
+              <i class="fas fa-info-circle"></i>
+            </div>
+            <h3>Portal Access</h3>
+            <p>
+              Please have your applicant ID ready to access your personalized
+              portal information.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <div id="decision-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <div id="decision-content"></div>
+        </div>
+      </div>
+
+      <footer id="footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>Rafiki Global Scholars</h4>
+            <p>
+              Supporting High-Achieving, Low-Income Tanzanian Students To Gain
+              Admission & Scholarships in Top Universities.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li>
+                <a href="https://www.rafikiglobalsch.org/about.html"
+                  >About RGS</a
+                >
+              </li>
+              <li>
+                <a href="https://www.rafikiglobalsch.org/achievements.html"
+                  >Our Achievements</a
+                >
+              </li>
+              <li>
+                <a href="https://www.rafikiglobalsch.org/team.html">Our Team</a>
+              </li>
+              <li>
+                <a href="https://www.rafikiglobalsch.org/contact.html"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact Info</h4>
+            <p>
+              Haile Selassie Road, Off Mwaya Street, Masaki Plot No. 1387 C.,
+              Dar es Salaam, Tanzania
+            </p>
+            <p>
+              <a href="mailto:info@rafikiglobalscholars.org"
+                >info@rafikiglobalscholars.org</a
+              >
+            </p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2024 Rafiki Global Scholars. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+    <audio id="acceptance-audio" preload="auto">
+      <source src="assets/sounds/celebration.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+  </body>
+</html>
