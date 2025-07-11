@@ -24,14 +24,14 @@ document.addEventListener('DOMContentLoaded', function() {
         acceptancePath: 'assets/Jane/jane_doe.jpg',
         financialPath: 'assets/Jane/jane.pdf'
     },
-    // {
-    //     id: '250894',
-    //     dob: '2005-05-20',
-    //     status: 'accepted',
-    //     name: 'Christopher',
-    //     acceptancePath: 'assets/Christopher/christopher.jpg',
-    //     financialPath: 'assets/Christopher/Final RGS Financial Support Letter.pdf'
-    // },
+    {
+        id: '250894',
+        dob: '2005-05-20',
+        status: 'accepted',
+        name: 'Christopher',
+        acceptancePath: 'assets/Christopher/christopher.jpg',
+        financialPath: 'assets/Christopher/christopher.pdf'
+    },
     {
         id: '251067',
         dob: '2002-05-17',
