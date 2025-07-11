@@ -174,7 +174,7 @@ if (applicant.name === 'Jane Doe') {
             decisionContent.innerHTML = `
                 <div class="decision-header">
                     <h2>Rafiki Global Scholars Decision</h2>
-                    <p>${formattedDate}</p>
+                    <p>July 10, 2025</p>
                 </div>
                 
                 <div class="acceptance">
