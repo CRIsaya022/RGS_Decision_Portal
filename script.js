@@ -15,6 +15,15 @@ document.addEventListener('DOMContentLoaded', function() {
         acceptancePath: 'assets/Crispin/crispin.jpg',
         financialPath: 'assets/Crispin/crispin_aid.pdf'
     },
+
+     {
+        id: '250546',
+        dob: '2025-07-10',
+        status: 'accepted',
+        name: 'Jane Doe',
+        acceptancePath: 'assets/Jane/jane_doe.jpg',
+        financialPath: 'assets/Jane/jane.pdf'
+    },
     // {
     //     id: '250894',
     //     dob: '2005-05-20',
@@ -152,7 +161,15 @@ document.addEventListener('DOMContentLoaded', function() {
         // Create the decision content based on status
         if (applicant.status === 'accepted') {
             // Determine which statement of understanding to use (same for all applicants)
-            const statementOfUnderstandingPath = 'assets/Final RGS statement of Understanding.pdf';
+            // const statementOfUnderstandingPath = 'assets/Final RGS statement of Understanding.pdf';
+            let statementOfUnderstandingPath;
+
+if (applicant.name === 'Jane Doe') {
+    statementOfUnderstandingPath = 'assets/Jane/jane.pdf';
+} else {
+    statementOfUnderstandingPath = 'assets/Final RGS statement of Understanding.pdf';
+}
+
             
             decisionContent.innerHTML = `
                 <div class="decision-header">
